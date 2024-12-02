@@ -1,0 +1,130 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "vehicleNumber": "12345 I DXB",
+      "jobCard": "4000123401",
+      "status": "Delivery",
+      "startTime": "2024-11-29T16:44:23.788Z",
+      "endTime": "2024-11-29T17:04:23.788Z",
+      "plannedDuration": 60
+    },
+    {
+      "id": 2,
+      "vehicleNumber": "KL-07-XX-5678",
+      "jobCard": "JC67890",
+      "status": "Delivery",
+      "startTime": "2024-11-29T16:44:30.154Z",
+      "endTime": "2024-11-29T17:04:30.154Z",
+      "plannedDuration": 180
+    },
+    {
+      "id": 3,
+      "vehicleNumber": "12345 I DXB",
+      "jobCard": "4000123401",
+      "status": "Car Washing",
+      "startTime": "2024-11-29T16:44:23.788Z",
+      "endTime": "2024-11-29T17:04:23.788Z",
+      "plannedDuration": 60
+    },
+    {
+      "id": 4,
+      "vehicleNumber": "KL-07-XX-5678",
+      "jobCard": "JC67890",
+      "status": "Repair",
+      "startTime": "2024-11-29T16:44:30.154Z",
+      "endTime": "2024-11-29T17:04:30.154Z",
+      "plannedDuration": 180
+    },
+    {
+      "id": 5,
+      "vehicleNumber": "12345 I DXB",
+      "jobCard": "4000123401",
+      "status": "Inspection",
+      "startTime": "2024-11-29T16:44:23.788Z",
+      "endTime": "2024-11-29T17:04:23.788Z",
+      "plannedDuration": 60
+    },
+    {
+      "id": 6,
+      "vehicleNumber": "KL-07-XX-5678",
+      "jobCard": "JC67890",
+      "status": "Delivery",
+      "startTime": "2024-11-29T16:44:30.154Z",
+      "endTime": "2024-11-29T17:04:30.154Z",
+      "plannedDuration": 180
+    },
+    {
+      "vehicleNumber": "123dxb",
+      "jobCard": "40023452",
+      "plannedDuration": 120,
+      "id": 7,
+      "status": "Repair",
+      "startTime": "2024-11-29T17:36:06.611Z",
+      "endTime": "2024-11-29T20:36:06.613Z"
+    },
+    {
+      "vehicleNumber": "2345SHJ K DXB",
+      "jobCard": "8976876",
+      "plannedDuration": 60,
+      "id": 8,
+      "status": "Inspection",
+      "startTime": "2024-11-29T17:35:57.500Z",
+      "endTime": "2024-11-29T18:35:57.500Z"
+    },
+    {
+      "vehicleNumber": "DFEWDFDX9",
+      "jobCard": "lkjhlkjghlkjh",
+      "plannedDuration": 60,
+      "id": 9,
+      "status": "Inspection",
+      "startTime": "2024-11-29T17:43:38.180Z",
+      "endTime": "2024-11-29T18:43:38.180Z"
+    },
+    {
+      "vehicleNumber": "2345ASDF",
+      "jobCard": "efrg45t",
+      "plannedDuration": 60,
+      "id": 10,
+      "status": "Quality Check",
+      "startTime": "2024-11-29T18:43:18.621Z",
+      "endTime": "2024-11-29T19:43:18.621Z"
+    },
+    {
+      "vehicleNumber": "98980",
+      "jobCard": "40005654",
+      "plannedDuration": 120,
+      "id": 11,
+      "status": "Inspection",
+      "startTime": "2024-11-30T08:11:34.762Z",
+      "endTime": "2024-11-30T10:11:34.762Z"
+    },
+    {
+      "vehicleNumber": "12237 DXB PAJERO",
+      "jobCard": "4003456",
+      "plannedDuration": 60,
+      "id": 12,
+      "status": "Inspection",
+      "startTime": "2024-11-30T08:23:52.187Z",
+      "endTime": "2024-11-30T09:23:52.187Z"
+    },
+    {
+      "vehicleNumber": "90909 DUBAI OUTLANDER",
+      "jobCard": "4023344501",
+      "plannedDuration": 60,
+      "id": 13,
+      "status": "Inspection",
+      "startTime": "2024-11-30T08:32:27.072Z",
+      "endTime": "2024-11-30T09:32:27.073Z"
+    },
+    {
+      "vehicleNumber": "55555 DXB ECLIPSE CROSS",
+      "jobCard": "4002323344",
+      "plannedDuration": 60,
+      "id": 14,
+      "status": "Inspection",
+      "startTime": "2024-11-30T08:43:42.948Z",
+      "endTime": "2024-11-30T09:43:42.948Z"
+    }
+  ]
+}
