@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import CreateVehicleForm from './components/CreateVehicleForm';
 import VehicleList from './components/VehicleList';
 import { getData } from '@/server/quries';
+import Header from './components/Header';
 
 interface Job {
   id: number;
@@ -95,9 +96,10 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="p-2 bg-blue-600 text-white shadow-md">
-        <h1 className="text-center text-2xl font-bold">Vehicle Maintenance Dashboard</h1>
+        <Header />
+        
       </header>
-      <div className="flex flex-col items-center justify-center border-b">
+      <div className="flex flex-col items-center mb-4 mt-2 px-2 py-2 justify-center border-b">
         <CreateVehicleForm onVehicleCreated={fetchVehicles} />
       </div>
       <main className="p-2">

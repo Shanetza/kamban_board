@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ClerkProvider, SignedOut, SignedIn, UserButton, SignInButton } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "JPBC",
-  description: "KAMBAN-BOARD",
+  description: "KANBAN-BOARD",
 };
 
 export default function RootLayout({
@@ -24,12 +25,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <SignedOut>
+          <div className="flex justify-center items-center h-screen">
+            <SignInButton  />
+          </div>
+          </SignedOut>
+          <SignedIn>
+            {/* <UserButton /> */}
+            {children}
+          </SignedIn>
+        {/* {children} */}
       </body>
-    </html>
+      </html>
+    </ClerkProvider>
   );
 }

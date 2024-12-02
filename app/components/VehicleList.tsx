@@ -5,8 +5,7 @@ import React from 'react'
 export default function VehicleList ({vehicleList}: {vehicleList: Job[]}) {
   return (
     <>
-        {vehicleList?.map((vehicle) => (
-            
+        {vehicleList?.map((vehicle) => (            
             <Link href={`/vehicles/${vehicle.id}`} key={vehicle.id}>  
             <div className='flex items-center justify-between border shadow-sm p-4 w-full mt-4'>
                 <div  className=''>

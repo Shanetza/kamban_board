@@ -69,7 +69,7 @@ export default function CreateVehicleForm({ onVehicleCreated }: CreateVehicleFor
         <div>
             <Dialog>
                 <DialogTrigger asChild>
-                    <Button variant="outline">Add New Vehicle</Button>
+                    <Button variant="outline" className='w-full bg-red-500 text-white rounded-full'>Add New Vehicle</Button>
                 </DialogTrigger>
                 <DialogContent className='rounded-xl'>
                     <DialogHeader>

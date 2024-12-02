@@ -37,7 +37,11 @@ export default function DashboardPage() {
 
   return (
     <div className="px-2 py-2">
-      <h1 className="text-2xl font-bold text-white text-center mb-2 p-4 bg-gray-500 rounded-lg">Vehicle Maintenance Dashboard</h1>
+      <div className="flex flex-col justify-between items-center">
+          <h1 className="text-2xl font-bold text-white text-center mb-2 p-4 bg-gray-500 rounded-lg">Vehicle Maintenance Dashboard</h1>
+          
+      </div>
+      
       <WorkshopBoard vehicles={vehicles} />
     </div>
   );
