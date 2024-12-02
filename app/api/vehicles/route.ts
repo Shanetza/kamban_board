@@ -4,34 +4,34 @@ import { jobsTable } from "@/server/db/schema";
 import { eq } from "drizzle-orm";
 import { NextResponse } from 'next/server'
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+// export async function GET(req: NextApiRequest, res: NextApiResponse) {
 
-    try {
-        const { query } = req;
+//     try {
+//         const { query } = req;
 
-        if (query.id) {
-            const vehicle = await db.select().from(jobsTable).where(eq(jobsTable.id, parseInt(query.id as string)));
-            return NextResponse.json(vehicle[0]);
-        }
-        else {
-            const vehicles = await db.select().from(jobsTable);
-            return NextResponse.json(vehicles);
-        }
+//         if (query.id) {
+//             const vehicle = await db.select().from(jobsTable).where(eq(jobsTable.id, parseInt(query.id as string)));
+//             return NextResponse.json(vehicle[0]);
+//         }
+//         else {
+//             const vehicles = await db.select().from(jobsTable);
+//             return NextResponse.json(vehicles);
+//         }
         
-    } catch (error) {
-        return NextResponse.json({ error: (error as Error).message });
-    }
-}
+//     } catch (error) {
+//         return NextResponse.json({ error: (error as Error).message });
+//     }
+// }
 
-export async function GETbyID( { params }: { params: { id: string; }; }) {
-    try {
-        const job = await db.select().from(jobsTable).where(eq(jobsTable.id, parseInt(params.id))).limit(1);
-        console.log(job);
-        return NextResponse.json(job[0]);
-    } catch (error) {
-        return NextResponse.json({ error: (error as Error).message });
-    }
-}
+// export async function GETbyID( { params }: { params: { id: string; }; }) {
+//     try {
+//         const job = await db.select().from(jobsTable).where(eq(jobsTable.id, parseInt(params.id))).limit(1);
+//         console.log(job);
+//         return NextResponse.json(job[0]);
+//     } catch (error) {
+//         return NextResponse.json({ error: (error as Error).message });
+//     }
+// }
 
 
 export async function POST(request: Request) {

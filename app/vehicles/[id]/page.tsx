@@ -6,14 +6,6 @@ import { getJobById, updateJobStatus } from '@/server/quries';
 import { Job } from '@/server/db/schema';
 import { Button } from '@/components/ui/button';
 
-interface Vehicle {
-    id: string;
-    vehicleNumber: string;
-    orderNumber: string;
-    status: string;
-    plannedDuration: number;
-    branch: string;
-}
 
 export default function VehicleDetails({ params }: { params: { id: string } }) {
     const [vehicle, setVehicle] = useState<Job | null>(null);
@@ -29,10 +21,7 @@ export default function VehicleDetails({ params }: { params: { id: string } }) {
     }, [params.id]);
 
     const fetchVehicleDetails = async () => {
-        try {
-            // const response = await fetch(`/api/vehicles/${params.id}`);
-            // if (!response.ok) throw new Error('Failed to fetch vehicle details');
-            // const data = await response.json();
+        try {            
             const data = await getJobById(parseInt(params.id));
             setVehicle(data[0]);
         } catch (err) {
@@ -41,23 +30,7 @@ export default function VehicleDetails({ params }: { params: { id: string } }) {
             setLoading(false);
         }
     };
-
-    // const handleStatusUpdate = async (newStatus: string) => {
-    //     try {
-    //         const response = await fetch(`/api/vehicles/${params.id}`, {
-    //             method: 'PATCH',
-    //             headers: { 'Content-Type': 'application/json' },
-    //             body: JSON.stringify({ status: newStatus }),
-    //         });
-
-    //         if (!response.ok) throw new Error('Failed to update status');
-            
-    //         setVehicle(prev => prev ? { ...prev, status: newStatus } : null);
-    //         router.refresh();
-    //     } catch (err) {
-    //         setError('Failed to update status');
-    //     }
-    // };
+   
 
     const handleStatusUpdate = async (newStatus: string) => {
         try {
